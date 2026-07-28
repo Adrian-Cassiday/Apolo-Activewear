@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description” content="Apollo's Activewear, comfort clothes, and affordable">
+    <meta name="author" content="Adrian Cassiday">
+    <title>Apollo Activewear</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="highslide/highslide.js" defer></script>
+    <link rel="stylesheet" href="highslide/highslide.css">
+</head>
+<body>
+    <header>
+        <a href="lesson03.html">
+           <div class="head-banner">
+            <img src="images/Logo.png" width="300px" height="200px" alt=" website">
+            <h1>Apollo Activewear</h1>
+            </div>
+        </a>
+
+            
+        <!--I created a image for the logo -->
+
+        <button class="menu-toggle" type="button">Menu</button>
+        
+        
+        
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="sports-wear.html">Sportswear</a>
+           
+            <a href="shorts-pants.html">Shorts and Pants</a>
+            
+            <a href="head-wear.html">Headwear</a>
+           
+            <a href="tops.html">Tops</a>
+           
+            <a href="other.html">Other</a>
+
+            <a href="honeypot.html">Contact us</a>
+        </nav>
+
+        <!--This class is the two column setup-->
+    
+                </header>
+                <main class="product-layout">
+
+    <article class="products">
+       
+        <section class="product-card">
+            <a href="images2/joggers.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/joggers.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Joggers</h3>
+
+            <p>$16.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Comfy</li>
+                    <li>Fitted</li>
+                    <li>All season</li>
+                    <li>Breathable</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+        <section class="product-card">
+            <a href="images2/casual-shorts.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/casual-shorts.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Casual Shorts</h3>
+
+            <p>$15.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Cool for summer</li>
+                    <li>Style easily</li>
+                    <li>Perfect for summer</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+        <section class="product-card">
+            <a href="images2/beach-shorts.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/beach-shorts.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Beach Shorts</h3>
+
+            <p>$20.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Stylish at the beach</li>
+                    <li>Washer safe</li>
+                    <li>Perfect for summer fun</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+        
+        <section class="product-card">
+            <a href="images2/jeans.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/jeans.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Jeans</h3>
+
+            <p>$49.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Comfort</li>
+                    <li>Made for all seasons</li>
+                    <li>Durable</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+        <section class="product-card">
+            <a href="images2/fighting-shorts.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/fighting-shorts.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Sparring Shorts</h3>
+
+            <p>$35.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Comfort</li>
+                    <li>Made to sweat in</li>
+                    <li>Ready for action</li>
+                    <li>Durable</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+    </article>
+
+</main>
+        
+            <footer>
+
+         <address>
+        Apollo Activewear<br>
+        123 Apollo Drive<br>
+        Phoenix, AZ 85001<br>
+        Phone: (602) 555-1234
+         </address>
+
+         <p>
+        &copy; 2026 Apollo Activewear. All rights reserved.
+         </p>
+
+         <p>
+        Email us:
+        <a href="mailto:Adr2218767@maricopa.edu">
+            Adr2218767@maricopa.edu
+        </a>
+         </p>
+
+            </footer>
+
+            <script>
+                const menuButton = document.querySelector(".menu-toggle");
+                const nav = document.querySelector("nav");
+
+                menuButton.addEventListener("click", function() {
+                    nav.classList.toggle("show");
+                });
+            </script>
+</body>
+</html>

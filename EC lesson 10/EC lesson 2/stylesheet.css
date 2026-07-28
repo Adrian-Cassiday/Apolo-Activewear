@@ -1,0 +1,353 @@
+/* main page layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/*contact page*/
+
+.contact.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+article.contact {
+    display: grid;
+    gap: 1.5rem;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 850px;
+}
+
+.contact form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+
+
+
+
+/* columns */
+
+.intro {
+    grid-column: 2;
+    margin-top: 0;
+}
+
+.right-sidebar {
+    grid-column: 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    align-self: start;
+}
+
+
+/* imgs rules */
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.big-img img {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+.big-img {
+    display: flex;
+    justify-content: center;
+}
+
+.side-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.deals img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* banner and nav */
+
+.head-banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 20px;
+    gap: 25px;
+
+    background-color: black;
+}
+
+.head-banner img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.head-banner h1 {
+    color: white;
+    font-size: 2em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    gap: 100px;
+
+    background-color: #f4a7b9;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* intro rules */
+
+.intro h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.intro p {
+    line-height: 2;
+    text-align: left;
+
+    margin: 20px auto;
+
+    max-width: 800px;
+}
+
+
+/* footer rules */
+
+footer {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* deals */
+
+.deals {
+    background-color: #f4a7b9;
+
+    border: 3px dotted black;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+/* side image */
+
+.side-image {
+    background-color: #f4a7b9;
+
+    border: 2px dotted black;
+}
+
+/* banner for the monthly add*/
+
+.banner {
+    background-image: url(images/banner.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1 / 4;
+    grid-row: 2;
+
+    background-color: #f4a7b9;
+
+    padding: 20px;
+
+    text-align: center;
+
+    height: 400px;
+}
+
+.banner p {
+    background-color: #f4a7b9;
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+     border-radius: 10px;
+}
+
+.banner h2 {
+    background-color: #f4a7b9;
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+     border-radius: 10px;
+}
+
+/* template page*/
+
+
+.product-layout {
+    width: 100%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-card {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #f4a7b9;
+    border-radius: 15px;
+}
+
+.product-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Display for mobile devices*/ 
+
+@media (max-width:700px)  {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .right-sidebar {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .head-banner {
+        display: block;
+        text-align: center;
+    }
+    .head-banner img {
+        display: block;
+        margin: auto;
+    }
+
+    .page-layout,
+    .product-layout {
+        display: block;
+        margin: 15px;
+        padding: 15px;
+    }
+    .product-card {
+        margin-bottom: 20px;
+    }
+    .products {
+    grid-template-columns: 1fr;
+}
+
+.menu-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f4a7b9;
+    border-radius: 10px;
+    border: none;
+}
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav.show {
+        display: flex;
+    }
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
+
+/*honeypot*/
+
+.hp {
+    display: none;
+}

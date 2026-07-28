@@ -1,0 +1,203 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description” content="Apollo's Activewear, comfort clothes, and affordable">
+    <meta name="author" content="Adrian Cassiday">
+    <title>Apollo Activewear</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="highslide/highslide.js" defer></script>
+    <link rel="stylesheet" href="highslide/highslide.css">
+</head>
+<body>
+    <header>
+        <a href="lesson03.html">
+           <div class="head-banner">
+            <img src="images/Logo.png" width="300px" height="200px" alt=" website">
+            <h1>Apollo Activewear</h1>
+            </div>
+        </a>
+
+            
+        <!--I created a image for the logo -->
+
+        <button class="menu-toggle" type="button">Menu</button>
+        
+        
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="sports-wear.html">Sportswear</a>
+           
+            <a href="shorts-pants.html">Shorts and Pants</a>
+            
+            <a href="head-wear.html">Headwear</a>
+           
+            <a href="tops.html">Tops</a>
+           
+            <a href="other.html">Other</a>
+
+            <a href="honeypot.html">Contact us</a>
+        </nav>
+
+        <!--This class is the two column setup-->
+    
+                </header>
+                <main class="product-layout">
+
+    <article class="products">
+
+        <!-- Shoes for running-->
+
+        <section class="product-card">
+            <a href="images2/runningShoes.jpg" class="highslide" onclick="return hs.expand(this)">
+            <img src="images2/runningShoes.jpg" alt="Shoes that are meant for running">
+            </a>
+            
+            <h3>Running Shoes</h3>
+            
+            <p>$79.95</p>
+            
+            <details open>
+                <summary> Details </summary>
+                    <ul>
+                        <li>Extreme grip</li>
+                        <li>Breathable material</li>
+                        <li>Durable</li>
+                        <li>Light weight</li>
+                    </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+        <!--Sport shoes-->
+
+        <section class="product-card">
+            <a href="images2/shoes.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/shoes.jpg" alt="Sport shoes">
+            </a>
+
+            <h3>Sport Shoes</h3>
+
+            <p>$49.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Comfort</li>
+                    <li>Ankle support</li>
+                    <li>All season</li>
+                    <li>Durable</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+        </section>
+
+        <!--Sport wear clothes-->
+
+        <section class="product-card">
+            <a href="images2/activeWear.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/activeWear.jpg" alt="Clothes that are made for sports">
+            </a>
+
+            <h3>Sports wear</h3>
+
+            <p>$99.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Breathable design</li>
+                    <li>Material that moves with you</li>
+                    <li>Light weight</li>
+                    <li>Stain proof</li>
+                    <li>affordable</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+            </section>
+
+        <!--Comfortable clothes for everyday wear-->
+
+        <section class="product-card">
+
+            <a href="images2/comfort.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/comfort.jpg" alt="Comfortable clothes for everyday wear">
+            </a>
+
+            <h3>Everyday Sweater</h3>
+
+            <p>$39.99</p>
+
+            <details open>
+                <summary>Details</summary>
+                <ul>
+                    <li>Loose fit for comfort</li>
+                    <li>Soft on the skin</li>
+                    <li>Washer friendly</li>
+                    <li>Needs to be air dry</li>
+                </ul>
+                </details>
+                <button type="button">Add to Cart</button>
+
+        </section>
+
+        <!--Beanies-->
+
+        <section class="product-card">
+            <a href="images2/beanie.jpg" class="highslide" onclick="return hs.expand(this)">
+                <img src="images2/beanie.jpg" alt="Image of a male with a beanie on">
+            </a>
+
+            <h3>Beanies</h3>
+
+            <p>$14.99</p>
+            
+            <details open>
+
+                <summary>Details</summary>
+
+                <ul>
+                    <li>Soft</li>
+                    <li>Stylish</li>
+                    <li>One size fits all</li>
+                </ul>
+            </details>
+            <button type="button">Add to Cart</button>
+            </section>
+        
+    </article>
+
+</main>
+        
+            <footer>
+
+         <address>
+        Apollo Activewear<br>
+        123 Apollo Drive<br>
+        Phoenix, AZ 85001<br>
+        Phone: (602) 555-1234
+         </address>
+
+         <p>
+        &copy; 2026 Apollo Activewear. All rights reserved.
+         </p>
+
+         <p>
+        Email us:
+        <a href="mailto:Adr2218767@maricopa.edu">
+            Adr2218767@maricopa.edu
+        </a>
+         </p>
+
+            <script>
+                const menuButton = document.querySelector(".menu-toggle");
+                const nav = document.querySelector("nav");
+
+                menuButton.addEventListener("click", function() {
+                    nav.classList.toggle("show");
+                });
+            </script>
+</body>
+</html>
